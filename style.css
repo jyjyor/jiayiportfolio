@@ -15,3 +15,54 @@ body {
 h1, h2, h3, p, span {
     color: #95bb72;
 }
+
+.project-num {
+    font-family: "damson", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    color: #95bb72;
+    font-size: 32px;
+}
+
+.project {
+    margin: 2rem auto;
+    max-width: 600px;
+}
+
+.project img {
+    width: 100%;
+    display: block;
+}
+
+.project-title {
+    font-family: "damson", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    color: #95bb72;
+    font-size: 32px;
+    margin-top: 1rem;
+}
+
+.project-desc {
+    font-family: 'Space Mono', monospace;
+    font-size: 16px;
+    color: #95bb72;
+    margin-top: 0.5rem;
+    white-space: nowrap;
+}
+
+.section {
+    font-family: "damson", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    color: #95bb72;
+    font-size: 44px;
+}
+
+#myname {
+    font-family: "damson", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    color: #95bb72;
+    font-size: 66px;
+}
