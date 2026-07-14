@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="https://use.typekit.net/han2bam.css">
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
 </head>
 <body>
 <p id="myname">Jiayi</p>
@@ -18,6 +19,34 @@
     <p class="project-desc">Caution coils into wire, labor stands still, shaped like a word.</p>
 </div>
 <p class="project-num">2</p>
+<div class="project">
+    <div class="model-wrapper">
+        <model-viewer
+            src="assets/models/mushroom-study.glb"
+            alt="A 3D study of my mushroom sculpture"
+            shadow-intensity="1"
+            camera-controls
+            auto-rotate
+            ar
+            class="project-model-viewer">
+        </model-viewer>
+        <button class="model-expand-btn" aria-label="Expand 3D viewer" onclick="document.getElementById('mushroom-overlay').classList.add('active')">&#x26F6;</button>
+    </div>
+    <p class="project-title">Mushroom Study</p>
+    <p class="project-desc">Placeholder mesh — final scan coming soon</p>
+</div>
+
+<div class="model-overlay" id="mushroom-overlay">
+    <button class="model-overlay-close" aria-label="Close" onclick="document.getElementById('mushroom-overlay').classList.remove('active')">&#x2715;</button>
+    <model-viewer
+        src="assets/models/mushroom-study.glb"
+        alt="A 3D study of my mushroom sculpture"
+        shadow-intensity="1"
+        camera-controls
+        auto-rotate
+        ar>
+    </model-viewer>
+</div>
 <p class="project-num">3</p>
 <p class="section">About</p>
 </body>
