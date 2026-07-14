@@ -64,7 +64,17 @@ h1, h2, h3, p, span {
     font-weight: 900;
     font-style: normal;
     color: #95bb72;
-    font-size: 66px;
+    font-size: 198px;
+    margin-top: 3rem;
+    margin-bottom: 0.25rem;
+}
+
+.section-link {
+    text-decoration: none;
+}
+
+.section-link .section:hover {
+    opacity: 0.7;
 }
 
 .model-wrapper {
